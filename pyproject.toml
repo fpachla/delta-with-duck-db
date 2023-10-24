@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "delta-with-duck-db"
+version = "0.1.0"
+description = ""
+authors = ["canutera <67880597+canutera@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+duckdb = "^0.9.1"
+dbt-duckdb = "^1.6.1"
+deltalake = "^0.12.0"
+delta = "^0.4.2"
+Faker = "^19.11.0"
+dbt-core = "^1.6.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
