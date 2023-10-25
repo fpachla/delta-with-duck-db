@@ -13,6 +13,7 @@ deltalake = "^0.12.0"
 delta = "^0.4.2"
 Faker = "^19.11.0"
 dbt-core = "^1.6.6"
+polars = "^0.19.11"
 
 
 [[tool.poetry.source]]

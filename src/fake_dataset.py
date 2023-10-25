@@ -102,7 +102,10 @@ class AccountBalanceModel:
         self.people, self.account_balance = self.new_people(new_people)
         for i in ['people', 'account_balance']:
             path = getattr(self, f'{i}_path')
-            shutil.rmtree(path)
+            try:
+                shutil.rmtree(path)
+            except FileNotFoundError:
+                pass
             getattr(self, i).write_delta(path)
         return self
     
