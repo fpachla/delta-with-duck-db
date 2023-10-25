@@ -158,6 +158,7 @@ class AccountBalanceModel:
     def save(self):
         for i in ['people', 'account_balance']:
             path = getattr(self, f'{i}_path')
-            getattr(self, i).write_delta(path, mode='overwrite')
+            getattr(self, i).write_delta(path, mode='append')
+            # getattr(self, i).write_delta(path, mode='overwrite')
         return self
 
